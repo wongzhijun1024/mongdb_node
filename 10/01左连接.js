@@ -15,7 +15,7 @@ MongoClient.connect(url, function(err, db) {
         }
     ]).toArray(function(err, res) {
         if (err) throw err;
-        console.log(JSON.stringify(res));
+        console.log(res);
         db.close();
     });
 });

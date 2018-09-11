@@ -4,7 +4,7 @@ var url = "mongodb://localhost:27017/hw";
 MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     var dbo = db.db("db_student");
-    var whereStr = {name:'小林'};  // 查询条件
+    var whereStr = {name:'小明'};  // 查询条件
     dbo.collection("table_student").deleteOne(whereStr, function(err, obj) {
         if (err) throw err;
         console.log("文档删除成功");

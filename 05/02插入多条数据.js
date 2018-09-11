@@ -7,6 +7,7 @@ MongoClient.connect(url, function(err, db) {
     var myobj =  [
         { name: "小杨", age: 17 },
         { name: "小王", age: 16 },
+        { name: "小明", age: 17 },
         { name: "小美", age: 19 }
     ];
     dbo.collection("table_student").insertMany(myobj, function(err, res) {

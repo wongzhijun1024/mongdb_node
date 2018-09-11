@@ -7,7 +7,7 @@ MongoClient.connect(url, function(err, db) {
     var dbo = db.db("db_student");
     //更新数据
     var whereStr = {"name":'小明'};
-    var updateStr = {$set: { age : 17 }};
+    var updateStr = {$set: { age : 18 }};
     dbo.collection("table_student").updateOne(whereStr, updateStr, function(err, res) {
         if (err) throw err;
         console.log("文档更新成功");

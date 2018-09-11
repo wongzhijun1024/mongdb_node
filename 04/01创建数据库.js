@@ -3,6 +3,6 @@ var url = "mongodb://localhost:27017/hw";
 
 MongoClient.connect(url, function(err, db) {
     if (err) throw err;
-    console.log("数据库已创建!");
+    console.log("数据库连接成功!");
     db.close();
 });

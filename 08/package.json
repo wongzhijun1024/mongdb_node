@@ -1,11 +1,14 @@
 {
-  "name": "06",
+  "name": "07",
   "version": "1.0.0",
   "description": "",
-  "main": "01查询数据.js",
+  "main": "01更新数据.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.1.4"
+  }
 }
